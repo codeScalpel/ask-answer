@@ -1,0 +1,279 @@
+html, body, #root {
+    width: 100%;
+	height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: SimHei;
+    color: #1A1A1A;
+    background: #F6F6F6;
+}
+
+.AppHeader {
+    position: relative;
+	min-width: 1032px;
+	height: 52px;
+	background: #FFFFFF;
+	box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+}
+
+#AppHeader-inner {
+    position:relative;
+	width: 1000px;
+	line-height: 52px;
+	padding: 0 16px;
+	margin: 0 auto;
+	color: #8590A6;
+	text-align: left;
+	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#EditNewQuestionButton, #PostCommentButton, #SkipButton {
+	width: 58px;
+	height:34px;
+	margin: auto 16px;
+	color: #FFFFFF;
+    background: #0084FF;
+	padding: 0 14px;
+	border: 1px solid #0084FF;
+}
+
+#EditNewQuestionButton:hover, #PostCommentButton:hover, #SkipButton:hover {
+	background: #007AE6;
+}
+
+.AppMain {
+	display: block;
+	width: 100%;
+	position: absolute;
+    top: 62px;
+	bottom: 0;
+}
+
+.AppContainer {
+	position: relative;
+    width: 1000px;
+    padding: 0 16px;
+    margin: 0 auto;
+	height: 100%;
+}
+
+.Card {
+	background: #FFFFFF;
+	overflow: auto;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+    box-sizing: border-box;
+}
+
+.CommentArea {
+	width: 100%;
+	height: 248px;
+}
+
+#CommentArea-header {
+	height: 52px;
+	padding: 0 16px;
+	line-height: 52px;
+	color: #D3D3D3;
+	background: #999999;
+}
+
+#CommentCount {
+	z-index: -1;
+}
+
+#ShowRandomCommentButton {
+	width: 80px;
+	position: absolute;
+	right: 32px;
+	top: 9px;
+	border: 1px solid #D3D3D3;
+	background: #999999;
+	color: #D3D3D3;
+	z-index: 100;
+	display: none;
+}
+
+#CommentArea-content {
+	height: 196px;
+}
+
+#CommentContent-outer {
+	width: 100%;
+	display: table;
+	height: 100%;
+}
+
+#CommentContent-middle {
+	width: 100%;
+	display:table-cell;
+	vertical-align:middle;
+	padding: 16px 16px;
+}
+
+#CommentContent-inner {
+	width: 100%;
+	font-family: Microsoft JhengHei;
+	font-size: 18px;
+	text-align: center;
+}
+
+.MainArea {
+	width: 1000px;
+	position: relative;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-bottom: 10px;
+}
+
+.QuestionArea {
+	width: 592px;
+	min-height: 340px;
+	padding: 6px 16px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.QuestionArea div {
+	width: 100%;
+	min-height: 21px;
+	padding: 10px 0;
+	font-size: 18px;
+	cursor: default;
+}
+
+.Option {
+	position: relative;
+	margin-bottom: 28px;
+	font-family: Microsoft JhengHei;
+	border-bottom: 2px solid rgb(240, 242, 247);
+}
+
+#Option1, #Option2, #Option3, #Option4{
+	padding-bottom: 0;
+}
+
+#Approvals1, #Approvals2, #Approvals3, #Approvals4 {
+	width: 80px;
+	height: 21px;
+	position: absolute;
+	bottom: -35px;
+	right: 0;
+	text-align: center;
+	z-index: 2;
+	font-size: 16px;
+}
+
+#Percentage1, #Percentage2, #Percentage3, #Percentage4 {
+	width: 0%;
+	height: 21px;
+	position: absolute;
+	bottom: -25px;
+	left: 0;
+	background: #D9EDFF;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+#Description-title {
+	color: #8590A6;
+}
+
+#Description {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.BorderBottom {
+	border-bottom: 2px solid rgb(240, 242, 247);
+	margin-top: 10px;
+}
+
+#Description:focus, .Option:focus {
+	border: 1px solid #007AE6;
+}
+
+.OptionClicked {
+	color: #007AE6;
+}
+
+#PostQuestionButton {
+	margin: auto auto;
+	margin-top: 10px;
+}
+
+#PostQuestionButton:hover {
+    background: #F0F8FF;
+}
+
+.ButtonLayoutArea-top {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#ErrorMessage {
+	width: 170px;
+	margin: auto auto;
+	font-family: Microsoft JhengHei;
+	border-bottom: 2px solid rgb(240, 242, 247);
+	text-align: center;
+	color: #FF85AD;
+	display: none;
+}
+
+.ButtonLayoutArea-bottom {
+	margin-top: 10px;
+}
+
+#SkipButton {
+	position: absolute;
+	left: 502px;
+	bottom: 16px;
+}
+
+.CommentWritingArea {
+	width: 392px;
+	height: 340px;
+	margin-left: 16px;
+	backgroud: #F6F6F6;
+}
+
+#CommentWritingArea-content {
+	width: 390px;
+	height: 298px;
+	padding: 16px;
+	border: 1px solid rgba(26, 26, 26, 0.1);
+	border-radius: 2px;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-family: Microsoft JhengHei;
+}
+
+#CommentWritingArea-content:focus {
+	border: 1px solid #007AE6;
+}
+
+#PostCommentButton {
+	float: right;
+	margin: auto auto;
+}
+
+button {
+	width: 58px;
+	height: 34px;
+	border: 1px solid #2797FF;
+	background: #FFFFFF;
+	color: #2797FF;
+	font-size: 14px;
+	font-family: SimHei;
+	cursor: pointer;
+	box-sizing: border-box;
+	border-radius: 3px;
+}

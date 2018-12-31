@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>区块链上的问答社区</title>
+        <link rel="shortcut icon" href="images/icon.png">
+        <script type="text/javascript" src='js/jquery.js'></script>
+        <script src="js/web3.min.js"></script>
+        <script src="js/truffle-contract.js"></script>
+        <script type="text/javascript" src='js/app.js'></script>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id='root'>
+            <header role="banner" class="AppHeader">
+                <div id="AppHeader-inner">
+                    <div>区块链上的问答社区</div>
+                    <Button id="EditNewQuestionButton">提问</Button>
+                </div>
+            </header>
+            <main role="main" class="AppMain">
+                <div class="AppContainer">
+                    <div class="CommentArea">
+                        <div class="Card" id="CommentArea-header">
+                            <div id="CommentCount"></div>
+                            <button id="ShowRandomCommentButton">下一条</button>
+                        </div>
+                        <div class="Card" id="CommentArea-content">
+                            <div id="CommentContent-outer">
+                                <div id="CommentContent-middle">
+                                    <div id="CommentContent-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MainArea">
+                        <div class="Card QuestionArea">
+                            <div id="Description-title"></div>
+                            <div id="Description"></div>
+                            <div class="Option" id="Option1">
+                                <div class="OptionContent" id="Option1-content"></div>
+                                <div class="Percentage" id="Percentage1"></div>
+                                <div class="Approvals" id="Approvals1"></div>
+                            </div>
+                            <div class="Option" id="Option2">
+                                <div class="OptionContent" id="Option2-content"></div>
+                                <div class="Percentage" id="Percentage2"></div>
+                                <div class="Approvals" id="Approvals2"></div>
+                            </div>
+                            <div class="Option" id="Option3">
+                                <div class="OptionContent" id="Option3-content"></div>
+                                <div class="Percentage" id="Percentage3"></div>
+                                <div class="Approvals" id="Approvals3"></div>
+                            </div>
+                            <div class="Option" id="Option4">
+                                <div class="OptionContent" id="Option4-content"></div>
+                                <div class="Percentage" id="Percentage4"></div>
+                                <div class="Approvals" id="Approvals4"></div>
+                            </div>
+                            <div class="ButtonLayoutArea-top">
+                                <div id="ErrorMessage"></div>
+                                <button id="PostQuestionButton">上传</button>
+                            </div>
+                            <div class="ButtonLayoutArea-bottom"></div>
+                            <button id="SkipButton">换题</button>
+                        </div>
+                        <div class="CommentWritingArea">
+                            <textarea id="CommentWritingArea-content" placeholder="发表评论"></textarea>
+                            <Button id="PostCommentButton">评论</Button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
